@@ -11,7 +11,7 @@ const aboutBlock = {
     "content":[
         {
             "name" : "Веб-разработка",
-            "urlImage": "./asserts/img/service3.jpg",
+            "urlImage": "./assets/img/service3.jpg",
             "description": "Создание современных и функциональных веб-сайтов!"
         },
         {
@@ -28,13 +28,13 @@ const service = {
     "content":[
         {
             "name" : "Веб-разработка",
-            "urlImage": "./asserts/img/service3.jpg",
+            "urlImage": "./assets/img/service3.jpg",
             "description": "Создание современных и функциональных веб-сайтов!",
             "price": "от 10000 ₽"
         },
         {
             "name" : "Веб-разработка",
-            "urlImage": "./asserts/img/service2.jpg",
+            "urlImage": "./assets/img/service2.jpg",
             "description": "Создание современных и функциональных веб-сайтов!",
             "price": "от 10000 ₽"
         }
@@ -47,7 +47,7 @@ const portfolio = {
     "content":[
         {
             "name" : "Веб-разработка",
-            "urlImage": "./asserts/img/service3.jpg",
+            "urlImage": "./assets/img/service3.jpg",
             "description": "Создание современных и функциональных веб-сайтов!",
             "button": {
                 "name": "Подробнее",
@@ -56,7 +56,7 @@ const portfolio = {
         },
         {
             "name" : "Веб-разработка",
-            "urlImage": "./asserts/img/service2.jpg",
+            "urlImage": "./assets/img/service2.jpg",
             "description": "Создание современных и функциональных веб-сайтов!",
             "button": {
                 "name": "Подробнее",
