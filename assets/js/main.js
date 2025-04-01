@@ -1,6 +1,6 @@
 const name_description = {
-    "nameSite": "FL-STUDIO",
-    "iconSite": "fas fa-bars",
+    "nameSite": "APLEKHANOV",
+    "iconSite": "fa fa-code",
     "descriptionSite": "Бюджетно и качественно! ✨",
     "copyrightYears": "2025",
 };
@@ -11,13 +11,23 @@ const aboutBlock = {
     "content":[
         {
             "name" : "Веб-разработка",
-            "urlImage": "./assets/img/service3.jpg",
+            "urlImage": "./assets/img/service1.jpg",
             "description": "Создание современных и функциональных веб-сайтов!"
         },
         {
-            "name": "",
-            "urlImage": "",
-            "description": ""
+            "name" : "Мобильная разработка",
+            "urlImage": "./assets/img/service2.jpg",
+            "description": "Разработка мобильных приложений для iOS и Android!"
+        },
+        {
+            "name" : "SEO-оптимизация",
+            "urlImage": "./assets/img/service3.jpg",
+            "description": "Оптимизация сайтов для повышения видимости в поисковых системах!"
+        },
+        {
+            "name" : "Дизайн",
+            "urlImage": "./assets/img/service4.jpg",
+            "description": "Создание уникального и привлекательного дизайна для вашего сайта!"
         }
     ]
 };
@@ -28,15 +38,27 @@ const service = {
     "content":[
         {
             "name" : "Веб-разработка",
-            "urlImage": "./assets/img/service3.jpg",
+            "urlImage": "./assets/img/service1.jpg",
             "description": "Создание современных и функциональных веб-сайтов!",
             "price": "от 10000 ₽"
         },
         {
-            "name" : "Веб-разработка",
+            "name" : "Мобильная разработка",
             "urlImage": "./assets/img/service2.jpg",
-            "description": "Создание современных и функциональных веб-сайтов!",
-            "price": "от 10000 ₽"
+            "description": "Разработка мобильных приложений для iOS и Android!",
+            "price": "от 15000 ₽"
+        },
+        {
+            "name" : "SEO-оптимизация",
+            "urlImage": "./assets/img/service3.jpg",
+            "description": "Оптимизация сайтов для повышения видимости в поисковых системах!",
+            "price": "от 8000 ₽"
+        },
+        {
+            "name" : "Дизайн",
+            "urlImage": "./assets/img/service4.jpg",
+            "description": "Создание уникального и привлекательного дизайна для вашего сайта!",
+            "price": "от 12000 ₽"
         }
     ]
 };
@@ -46,21 +68,39 @@ const portfolio = {
     "descriptionBlock": "Наше портфолио включает успешные проекты для клиентов из различных отраслей. Мы гордимся каждым выполненным заказом и стремимся к постоянному совершенствованию.",
     "content":[
         {
-            "name" : "Веб-разработка",
-            "urlImage": "./assets/img/service3.jpg",
-            "description": "Создание современных и функциональных веб-сайтов!",
+            "name" : "Проект для компании XYZ",
+            "urlImage": "./assets/img/service1.jpg",
+            "description": "Создание корпоративного сайта для компании XYZ.",
             "button": {
                 "name": "Подробнее",
-                "url": "fdf",
+                "url": "https://example.com/project1",
             }
         },
         {
-            "name" : "Веб-разработка",
+            "name" : "Мобильное приложение ABC",
             "urlImage": "./assets/img/service2.jpg",
-            "description": "Создание современных и функциональных веб-сайтов!",
+            "description": "Разработка мобильного приложения для ABC.",
             "button": {
                 "name": "Подробнее",
-                "url": "fdf",
+                "url": "https://example.com/project2",
+            }
+        },
+        {
+            "name" : "SEO-оптимизация для сайта DEF",
+            "urlImage": "./assets/img/service3.jpg",
+            "description": "Оптимизация сайта DEF для повышения трафика.",
+            "button": {
+                "name": "Подробнее",
+                "url": "https://example.com/project3",
+            }
+        },
+        {
+            "name" : "Дизайн для GHI",
+            "urlImage": "./assets/img/service4.jpg",
+            "description": "Создание дизайна для сайта GHI.",
+            "button": {
+                "name": "Подробнее",
+                "url": "https://example.com/project4",
             }
         }
     ]
@@ -71,21 +111,47 @@ const reviews = {
     "content":[
         {
             "username": "Плеханов Алексей",
-            "project": "4",
-            "comment": "4"
+            "project": "Проект №123",
+            "comment": "Все четко! Очень доволен результатом."
         },
         {
-            "username": "Плеханов Алексей",
-            "project": "5",
-            "comment": "6"
-        }
+            "username": "Иванова Мария",
+            "project": "Проект №456",
+            "comment": "Отличная работа, все сделано в срок!"
+        },
+        {
+            "username": "Сидоров Сергей",
+            "project": "Проект №789",
+            "comment": "Профессиональный подход и качественный результат."
+        },
+        {
+            "username": "Кузнецова Анна",
+            "project": "Проект №101",
+            "comment": "Рекомендую! Очень довольна сотрудничеством."
+        },
+        {
+            "username": "Тимофеев Алексей",
+            "project": "Проект №202",
+            "comment": "Все сделано на высшем уровне!"
+        },
+        {
+            "username": "Смирнова Ольга",
+            "project": "Проект №303",
+            "comment": "Команда профессионалов, с удовольствием работаем дальше."
+        },
+        {
+            "username": "Петров Николай",
+            "project": "Проект №404",
+            "comment": "Отличный сервис и качество работы!"
+        },
     ]
 };
 
 const sociallinks = {
-    "url_vk": "https://github.com/aleksey-plekhanov",
-    "url_telegram": "https://github.com/aleksey-plekhanov"
+    "url_vk": "https://vk.com/example",
+    "url_telegram": "https://t.me/example"
 };
+
 
 const burger = document.getElementById('burger');
 
