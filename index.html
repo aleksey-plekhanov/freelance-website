@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Сайт фрилансера</title>
+    <meta name="description" content="Описание сайта фрилансера">
+    <meta name="keyword" content="фрилансер, студент">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/libs/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="./assets/libs/bootstrap-grid.min.css">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div id="header-block"></div>
+            <div class="navbar-wrap">
+                <ul class="navbar-menu" id="navbar-menu">
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#portfolio">Портфолио</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
+                </ul>
+            </div>
+            <div class="burger-button" id="burger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <a href="#contacts" class="callback">Связаться</a>
+        </div>
+    </nav>
+
+    <div class="promo-block">
+        <div class="container">
+            <div class="margin-b-40" id="promo-block"></div>
+            <button class="callback" href="#contacts" title="Контакты"><a href="#contacts">Связаться</a></button>
+        </div>
+    </div>
+    
+    <section id="about">
+        <div class="container" id="about-block"> </div>
+    </section>
+
+    <section id="services">
+        <div class="container" id="service-block"></div>
+    </section>
+
+    <section id="portfolio">
+        <div class="container" id="portfolio-block"></div>
+    </section>
+
+    <section id="reviews">
+        <div class="container" id="reviews-block"></div>
+    </section>
+    <section id="contacts">
+        <div class="container">
+            <h2>Остались вопросы? Хотите приобрести услугу?</h2>
+            <h5>Заполните форму и с вами свяжутся в ближайшее время</h5>
+
+            <form id="contacts-form">
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="email" placeholder="Ваша почта" required>
+                <textarea type="text" placeholder="Сообщение" required></textarea>
+                <button type="submit" onclick="alert('Нажал на кнопку');" class="contacts-form">Отправить сообщение</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="social-links" id="social-links"></div>
+            <div id="copyright-block"></div>
+        </div>
+    </footer>
+</body>
+<script src="./assets/js/main.js" defer></script>
+</html>
