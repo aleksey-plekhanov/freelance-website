@@ -11,7 +11,7 @@ const aboutBlock = {
     "content":[
         {
             "name" : "Веб-разработка",
-            "urlImage": "./static/img/service3.jpg",
+            "urlImage": "./asserts/img/service3.jpg",
             "description": "Создание современных и функциональных веб-сайтов!"
         },
         {
@@ -28,13 +28,13 @@ const service = {
     "content":[
         {
             "name" : "Веб-разработка",
-            "urlImage": "./static/img/service3.jpg",
+            "urlImage": "./asserts/img/service3.jpg",
             "description": "Создание современных и функциональных веб-сайтов!",
             "price": "от 10000 ₽"
         },
         {
             "name" : "Веб-разработка",
-            "urlImage": "./static/img/service2.jpg",
+            "urlImage": "./asserts/img/service2.jpg",
             "description": "Создание современных и функциональных веб-сайтов!",
             "price": "от 10000 ₽"
         }
@@ -47,7 +47,7 @@ const portfolio = {
     "content":[
         {
             "name" : "Веб-разработка",
-            "urlImage": "./static/img/service3.jpg",
+            "urlImage": "./asserts/img/service3.jpg",
             "description": "Создание современных и функциональных веб-сайтов!",
             "button": {
                 "name": "Подробнее",
@@ -56,7 +56,7 @@ const portfolio = {
         },
         {
             "name" : "Веб-разработка",
-            "urlImage": "./static/img/service2.jpg",
+            "urlImage": "./asserts/img/service2.jpg",
             "description": "Создание современных и функциональных веб-сайтов!",
             "button": {
                 "name": "Подробнее",
@@ -136,25 +136,19 @@ function serviceBlock() {
     `
         <h2>${service.headerBlock}</h2>
         <p>${service.descriptionBlock}</p>
-    `;
-
-    code += '<div class="custom-grid">';
-
-    for(let i = 0; i < service.content.length; i++) {
-        code += 
-        `
+        <div class="custom-grid">
+        ${service.content.map(item => `
             <div class="custom-card">
-                <img src="${service.content[i].urlImage}">
-                <div class="custom-card-content">
-                    <h3>${service.content[i].name}</h3>
-                    <p>${service.content[i].description}</p>
-                    <p class="price">${service.content[i].price}</p>
+            <img src="${item.urlImage}">
+            <div class="custom-card-content">
+                <h3>${item.name}</h3>
+                <p>${item.description}</p>
+                <p class="price">${item.price}</p>
                 </div>
-            </div>
-        `;
-    }
-
-    code += '</div>'
+            </div>    
+        `).join('')}
+        </div>
+    `;
 
     document.getElementById('service-block').innerHTML += code;
 }
@@ -164,25 +158,18 @@ function portfolioBlock() {
     `
         <h2>${portfolio.headerBlock}</h2>
         <p>${portfolio.descriptionBlock}</p>
-    `;
-
-    code += '<div class="custom-grid">';
-
-    for(let i = 0; i < portfolio.content.length; i++) {
-        code += 
-        `
+        <div class="custom-grid">
+        ${portfolio.content.map(item => `
             <div class="custom-card">
-                <img src="${portfolio.content[i].urlImage}">
+                <img src="${item.urlImage}">
                 <div class="custom-card-content">
-                    <h3>${portfolio.content[i].name}</h3>
-                    <p>${portfolio.content[i].description}</p>
-                    <button class="callback"><a href="${portfolio.content[i].button.url}">${portfolio.content[i].button.name}</a></button>
+                    <h3>${item.name}</h3>
+                    <p>${item.description}</p>
+                    <button class="callback"><a href="${item.button.url}">${item.button.name}</a></button>
                 </div>
             </div>
-        `;
-    }
-
-    code += '</div>'
+        `).join('')} </div>
+    `;
 
     document.getElementById('portfolio-block').innerHTML += code;
 }
@@ -190,21 +177,17 @@ function portfolioBlock() {
 function reviewBlock() {
     let code = `            
             <h2>${reviews.headerReviews}</h2>
-            <div class="reviews-scrollable" id="reviews-block">`;
-
-    for(let i = 0; i < reviews.content.length; i++) {
-        code += 
-        `
-            <div class="review-card">
-                <i class="fas fa-user"></i>
-                <h3>${reviews.content[i].username}</h3>
-                <h6>${reviews.content[i].project}</h6>
-                <p>${reviews.content[i].comment}</p>
+            <div class="reviews-scrollable" id="reviews-block">
+            ${reviews.content.map(item => `
+                <div class="review-card">
+                    <i class="fas fa-user"></i>
+                    <h3>${item.username}</h3>
+                    <h6>${item.project}</h6>
+                    <p>${item.comment}</p>
+                </div>    
+            `).join('')} 
             </div>
-        `;
-    }
-
-    code += `</div>`;
+    `;
 
     document.getElementById('reviews-block').innerHTML += code;
 }

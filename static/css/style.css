@@ -286,7 +286,7 @@ footer {
 
 #hero {
     height: 65vh;
-    background-image: url('/static/img/main.jpg');
+    background-image: url('/asserts/img/main.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
