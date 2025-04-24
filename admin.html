@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Сайт фрилансера</title>
+    <meta name="description" content="Описание сайта фрилансера">
+    <meta name="keyword" content="фрилансер, студент">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/libs/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="assets/libs/bootstrap-grid.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div id="header-block"></div>
+            <div class="navbar-wrap">
+                <ul class="navbar-menu" id="navbar-menu">
+                    <li><a href="index.html#about">О нас</a></li>
+                    <li><a href="index.html#services">Услуги</a></li>
+                    <li><a href="index.html#portfolio">Портфолио</a></li>
+                    <li><a href="index.html#reviews">Отзывы</a></li>
+                    <li><a href="#">Админ-меню</a></li>
+                </ul>
+            </div>
+            <div class="burger-button" id="burger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <a href="#contacts" class="callback">Связаться</a>
+        </div>
+    </nav>
+
+    <section id="services">
+        <div class="container" id="service-block"></div>
+        <div class="block-center">
+            <button class="callback">Добавить</button>
+            <button class="callback">Редактировать</button>
+            <button class="callback" style="background-color: red;">Удалить</button>
+        </div>
+    </section>
+
+    <section id="edit-service">
+        
+        <h2 class="block-center">Услуги</h2>
+
+        <div class="block-center">
+            <input type="text" placeholder="Название услуги" required>
+        </div>
+        
+        <div class="block-center">
+            <input type="text" placeholder="Описание услуги" required>
+        </div>
+        
+        <div class="block-center">
+            <input type="number" placeholder="Стоимость услуги" required>
+        </div>
+
+        <div class="block-center">
+            <input type="number" placeholder="URL-картинки" required>
+        </div>
+        
+        <div class="block-center">
+            <button type="submit" onclick="alert('Нажал на кнопку');" class="callback">Сохранить</button>
+        <div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="social-links" id="social-links"></div>
+            <div id="copyright-block"></div>
+        </div>
+    </footer>
+</body>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/copyright.js"></script>
+<script src="assets/js/header.js"></script>
+<script src="assets/js/services.js"></script>
+<script src="assets/js/socialLinks.js"></script>
+</html>
